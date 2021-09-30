@@ -187,7 +187,7 @@ function clickHandler() {
 
     if (dob.value === "") {
         message.innerText = "Please select birthdate";
-        message.style.color = "red";
+        message.style.color = "Black";
     } else {
         meme.style.display = "block";
         message.style.display = "none";
@@ -206,14 +206,14 @@ function clickHandler() {
 
             if (checkPalindromeForAllDateFormats(date)) {
                 message.style.display = "block";
-                message.style.color = "green";
-                message.innerText = "Congrats!! your Birthday is a Palindrome 🥳";
+                message.style.color = "Black";
+                message.innerText = "Congrats, your Birthday is a Palindrome ";
                 nextPalindromeMessage.style.display = "none";
                 previousPalindromeMessage.style.display = "none";
             } else {
                 message.style.display = "block";
-                message.style.color = "red";
-                message.innerText = "Opps! your Birthday is not a palindrome 😐";
+                message.style.color = "Black";
+                message.innerText = "Sorry,your Birthday is not a palindrome ";
                 let [count, nextDate] = nextPalindromeDate(date);
                 let [ctr, previousDate] = previousPalindromeDate(date);
                 nextPalindromeMessage.style.display = "block";
